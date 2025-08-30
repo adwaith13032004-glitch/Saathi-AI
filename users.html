@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>User Data</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+    }
+
+    .sidebar {
+      width: 200px;
+      height: 100vh;
+      background: #2575fc;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .sidebar a:hover {
+      background: #1a5fd3;
+    }
+
+    .main {
+      margin-left: 220px;
+      padding: 20px;
+    }
+
+    h3 {
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background: #2575fc;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Admin Panel</h2>
+    <a href="patients.html">Patient Data</a>
+    <a href="users.html">User Data</a>
+    <a href="caretakers.html">Caretaker Data</a>
+    <a href="complaints.html">Complaints</a>
+    <a href="app-ratings.html">App Ratings</a>
+    <a href="caretaker-ratings.html">Caretaker Ratings</a>
+  </div>
+
+  <!-- Main content -->
+  <div class="main">
+    <h3>User Data</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email ID</th>
+          <th>Phone No.</th>
+          <th>Address</th>
+          <th>Gender</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice Johnson</td>
+          <td>28</td>
+          <td>alice@mail.com</td>
+          <td>9876543210</td>
+          <td>New York, NY</td>
+          <td>Female</td>
+          <td><a href="#">Delete</a></td>
+        </tr>
+        <tr>
+          <td>Bob Smith</td>
+          <td>35</td>
+          <td>bob@mail.com</td>
+          <td>9123456780</td>
+          <td>Chicago, IL</td>
+          <td>Male</td>
+          <td><a href="#">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

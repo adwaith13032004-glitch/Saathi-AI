@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Social Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 400px;
+            margin: 100px auto;
+            background: #fff;
+            padding: 30px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #0056b3;
+        }
+
+        p {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1><b>USER LOGIN</b></h1>
+    <form method="post" action="admininterface.html">
+        <table>
+            <tr>
+                <td><label for="email">EMAIL:</label></td>
+                <td><input type="text" name="email" id="email" placeholder="name@domain.com" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">PASSWORD:</label></td>
+                <td><input type="password" name="password" id="password" placeholder="********" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="LOGIN"></td>
+            </tr>
+        </table>
+    </form>
+    <p>Don't have an account? <a href="register.html">Register here</a>.</p>
+</div>
+
+</body>
+</html>
